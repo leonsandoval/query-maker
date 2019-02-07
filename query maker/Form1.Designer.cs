@@ -94,21 +94,21 @@
             // 
             // tbCodIdVentaConvenio
             // 
-            this.tbCodIdVentaConvenio.Location = new System.Drawing.Point(210, 94);
+            this.tbCodIdVentaConvenio.Location = new System.Drawing.Point(183, 94);
             this.tbCodIdVentaConvenio.Name = "tbCodIdVentaConvenio";
             this.tbCodIdVentaConvenio.Size = new System.Drawing.Size(108, 20);
             this.tbCodIdVentaConvenio.TabIndex = 1;
             // 
             // tbFolioBono
             // 
-            this.tbFolioBono.Location = new System.Drawing.Point(365, 94);
+            this.tbFolioBono.Location = new System.Drawing.Point(325, 94);
             this.tbFolioBono.Name = "tbFolioBono";
             this.tbFolioBono.Size = new System.Drawing.Size(114, 20);
             this.tbFolioBono.TabIndex = 2;
             // 
             // tbCorrPrestacion
             // 
-            this.tbCorrPrestacion.Location = new System.Drawing.Point(541, 94);
+            this.tbCorrPrestacion.Location = new System.Drawing.Point(501, 94);
             this.tbCorrPrestacion.Name = "tbCorrPrestacion";
             this.tbCorrPrestacion.Size = new System.Drawing.Size(112, 20);
             this.tbCorrPrestacion.TabIndex = 3;
@@ -125,7 +125,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(210, 75);
+            this.label2.Location = new System.Drawing.Point(183, 75);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(108, 13);
             this.label2.TabIndex = 5;
@@ -134,7 +134,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(365, 75);
+            this.label3.Location = new System.Drawing.Point(325, 75);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(54, 13);
             this.label3.TabIndex = 6;
@@ -143,7 +143,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(541, 75);
+            this.label4.Location = new System.Drawing.Point(501, 75);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(76, 13);
             this.label4.TabIndex = 7;
@@ -154,13 +154,13 @@
             this.resultado.Location = new System.Drawing.Point(37, 179);
             this.resultado.Name = "resultado";
             this.resultado.ReadOnly = true;
-            this.resultado.Size = new System.Drawing.Size(613, 130);
+            this.resultado.Size = new System.Drawing.Size(576, 130);
             this.resultado.TabIndex = 8;
             this.resultado.Text = "";
             // 
             // btGenerar
             // 
-            this.btGenerar.Location = new System.Drawing.Point(541, 131);
+            this.btGenerar.Location = new System.Drawing.Point(501, 131);
             this.btGenerar.Name = "btGenerar";
             this.btGenerar.Size = new System.Drawing.Size(109, 23);
             this.btGenerar.TabIndex = 9;
@@ -201,7 +201,7 @@
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.Padding = new System.Drawing.Point(3, 3);
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(695, 375);
+            this.tabControl1.Size = new System.Drawing.Size(628, 375);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
@@ -221,7 +221,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(687, 349);
+            this.tabPage1.Size = new System.Drawing.Size(620, 349);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "CodIdPrestacionCertificador 0";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -242,9 +242,9 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(687, 349);
+            this.tabPage2.Size = new System.Drawing.Size(620, 349);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Trseguimiento";
+            this.tabPage2.Text = "Bono no existe";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // btgenerar1
@@ -262,7 +262,7 @@
             this.resultado1.Location = new System.Drawing.Point(22, 147);
             this.resultado1.Name = "resultado1";
             this.resultado1.ReadOnly = true;
-            this.resultado1.Size = new System.Drawing.Size(562, 122);
+            this.resultado1.Size = new System.Drawing.Size(562, 150);
             this.resultado1.TabIndex = 8;
             this.resultado1.Text = "";
             // 
@@ -360,7 +360,7 @@
             this.tabPage3.Controls.Add(this.label8);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(687, 349);
+            this.tabPage3.Size = new System.Drawing.Size(620, 349);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Eliminar Liquidacion";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -414,7 +414,7 @@
             this.tabPage4.Controls.Add(this.label9);
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(687, 349);
+            this.tabPage4.Size = new System.Drawing.Size(620, 349);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Cambio Estado CME";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -522,7 +522,7 @@
             this.tabPage5.Controls.Add(this.label12);
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(687, 349);
+            this.tabPage5.Size = new System.Drawing.Size(620, 349);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Cambio Nombre";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -582,7 +582,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(691, 376);
+            this.ClientSize = new System.Drawing.Size(629, 371);
             this.Controls.Add(this.tabControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
