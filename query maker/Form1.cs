@@ -50,11 +50,11 @@ namespace query_maker
         {
             if(rbFin.Checked)
             {
-                this.resultado1.Text = "UPDATE trseguimiento SET AtrEstadoConciliacion =2 WHERE FolioBono = "+tbFolioBono1.Text + " and CodIdVentaConvenio =" + tbCodIdVentaConvenio1.Text + " and CodEntidad= " + cbEntidad.Text + " and AtrEntidadConciliar= 1";
+                this.resultado1.Text = "UPDATE trseguimiento SET AtrEstadoConciliacion =2 WHERE FolioBono = "+tbFolioBono1.Text + " and CodIdVentaConvenio =" + tbCodIdVentaConvenio1.Text + " and CodEntidad= " + cbEntidad.Text + " and AtrEntidadConciliar= 1;";
             }
             else if (rbCia.Checked)
             {
-                this.resultado1.Text = "UPDATE trseguimiento SET AtrEstadoConciliacion =2 WHERE FolioBono = " + tbFolioBono1.Text + " and CodIdVentaConvenio =" + tbCodIdVentaConvenio1.Text + " and CodEntidad= " + cbEntidad.Text + " and AtrEntidadConciliar= 3";
+                this.resultado1.Text = "UPDATE trseguimiento SET AtrEstadoConciliacion =2 WHERE FolioBono = " + tbFolioBono1.Text + " and CodIdVentaConvenio =" + tbCodIdVentaConvenio1.Text + " and CodEntidad= " + cbEntidad.Text + " and AtrEntidadConciliar= 3;";
             }
             
         }
@@ -101,7 +101,7 @@ namespace query_maker
         private void updates_TextChanged()
         {
             this.updates.Text = "UPDATE cfconvenioventa SET NombredelConvenio = '" + tbNombre.Text + "' WHERE CodIdConvenioVenta = " + tbCodIdConvenioVenta.Text + ";" + "\n" +
-            "UPDATE cfconveniopago SET NombredelConvenio = '" + tbNombre.Text + "' WHERE CodIdConvenioVenta = " + tbCodIdConvenioVenta.Text + ";";
+            "UPDATE cfconveniopago SET NombredelConvenio = '" + tbNombre.Text + "' WHERE CodIdConvenioPago = " + tbCodIdConvenioVenta.Text + ";";
         }
     }
 }
