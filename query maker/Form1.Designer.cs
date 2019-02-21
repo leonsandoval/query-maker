@@ -77,6 +77,7 @@
             this.tbCodIdConvenioVenta = new System.Windows.Forms.TextBox();
             this.tbNombre = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
+            this.rb3 = new System.Windows.Forms.RadioButton();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -206,6 +207,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.rb3);
             this.tabPage1.Controls.Add(this.resultado);
             this.tabPage1.Controls.Add(this.btGenerar);
             this.tabPage1.Controls.Add(this.rb2);
@@ -578,6 +580,17 @@
             this.label12.TabIndex = 0;
             this.label12.Text = "Nuevo Nombre Convenio";
             // 
+            // rb3
+            // 
+            this.rb3.AutoSize = true;
+            this.rb3.Location = new System.Drawing.Point(328, 22);
+            this.rb3.Name = "rb3";
+            this.rb3.Size = new System.Drawing.Size(114, 17);
+            this.rb3.TabIndex = 12;
+            this.rb3.TabStop = true;
+            this.rb3.Text = "Prestacion 308046";
+            this.rb3.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -652,6 +665,7 @@
         private System.Windows.Forms.TextBox tbCodIdConvenioVenta;
         private System.Windows.Forms.TextBox tbNombre;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.RadioButton rb3;
     }
 }
 
