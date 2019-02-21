@@ -39,10 +39,9 @@
             this.label4 = new System.Windows.Forms.Label();
             this.resultado = new System.Windows.Forms.RichTextBox();
             this.btGenerar = new System.Windows.Forms.Button();
-            this.rb1 = new System.Windows.Forms.RadioButton();
-            this.rb2 = new System.Windows.Forms.RadioButton();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.prestaciones = new System.Windows.Forms.ComboBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.btgenerar1 = new System.Windows.Forms.Button();
             this.resultado1 = new System.Windows.Forms.RichTextBox();
@@ -77,7 +76,7 @@
             this.tbCodIdConvenioVenta = new System.Windows.Forms.TextBox();
             this.tbNombre = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.rb3 = new System.Windows.Forms.RadioButton();
+            this.label14 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -169,28 +168,6 @@
             this.btGenerar.UseVisualStyleBackColor = true;
             this.btGenerar.Click += new System.EventHandler(this.btGenerar_Click);
             // 
-            // rb1
-            // 
-            this.rb1.AutoSize = true;
-            this.rb1.Checked = true;
-            this.rb1.Location = new System.Drawing.Point(40, 22);
-            this.rb1.Name = "rb1";
-            this.rb1.Size = new System.Drawing.Size(120, 17);
-            this.rb1.TabIndex = 10;
-            this.rb1.TabStop = true;
-            this.rb1.Text = "Prestacion 0306091";
-            this.rb1.UseVisualStyleBackColor = true;
-            // 
-            // rb2
-            // 
-            this.rb2.AutoSize = true;
-            this.rb2.Location = new System.Drawing.Point(178, 22);
-            this.rb2.Name = "rb2";
-            this.rb2.Size = new System.Drawing.Size(120, 17);
-            this.rb2.TabIndex = 11;
-            this.rb2.Text = "Prestacion 0306092";
-            this.rb2.UseVisualStyleBackColor = true;
-            // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
@@ -207,11 +184,10 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.rb3);
+            this.tabPage1.Controls.Add(this.label14);
+            this.tabPage1.Controls.Add(this.prestaciones);
             this.tabPage1.Controls.Add(this.resultado);
             this.tabPage1.Controls.Add(this.btGenerar);
-            this.tabPage1.Controls.Add(this.rb2);
-            this.tabPage1.Controls.Add(this.rb1);
             this.tabPage1.Controls.Add(this.tbNumActoVenta);
             this.tabPage1.Controls.Add(this.tbCodIdVentaConvenio);
             this.tabPage1.Controls.Add(this.label4);
@@ -228,6 +204,18 @@
             this.tabPage1.Text = "CodIdPrestacionCertificador 0";
             this.tabPage1.UseVisualStyleBackColor = true;
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
+            // 
+            // prestaciones
+            // 
+            this.prestaciones.FormattingEnabled = true;
+            this.prestaciones.Items.AddRange(new object[] {
+            "306091",
+            "306092",
+            "308046"});
+            this.prestaciones.Location = new System.Drawing.Point(183, 21);
+            this.prestaciones.Name = "prestaciones";
+            this.prestaciones.Size = new System.Drawing.Size(121, 21);
+            this.prestaciones.TabIndex = 13;
             // 
             // tabPage2
             // 
@@ -580,16 +568,14 @@
             this.label12.TabIndex = 0;
             this.label12.Text = "Nuevo Nombre Convenio";
             // 
-            // rb3
+            // label14
             // 
-            this.rb3.AutoSize = true;
-            this.rb3.Location = new System.Drawing.Point(328, 22);
-            this.rb3.Name = "rb3";
-            this.rb3.Size = new System.Drawing.Size(114, 17);
-            this.rb3.TabIndex = 12;
-            this.rb3.TabStop = true;
-            this.rb3.Text = "Prestacion 308046";
-            this.rb3.UseVisualStyleBackColor = true;
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(40, 21);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(112, 13);
+            this.label14.TabIndex = 14;
+            this.label14.Text = "PrestacionFinanciador";
             // 
             // Form1
             // 
@@ -627,8 +613,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.RichTextBox resultado;
         private System.Windows.Forms.Button btGenerar;
-        private System.Windows.Forms.RadioButton rb1;
-        private System.Windows.Forms.RadioButton rb2;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
@@ -665,7 +649,8 @@
         private System.Windows.Forms.TextBox tbCodIdConvenioVenta;
         private System.Windows.Forms.TextBox tbNombre;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.RadioButton rb3;
+        private System.Windows.Forms.ComboBox prestaciones;
+        private System.Windows.Forms.Label label14;
     }
 }
 
