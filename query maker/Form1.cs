@@ -20,27 +20,33 @@ namespace query_maker
 
         private void resultado_TextChanged()
         {
+            string vtaconvenio = " where NumActoVenta = " + tbNumActoVenta.Text  + " and CodIdVentaConvenio =" + tbCodIdVentaConvenio.Text + " and CorrPrestacion =" + tbCorrPrestacion.Text + ";" + "\n" + "\n";
+            string bonoprestacion = " where NumActoVenta = " + tbNumActoVenta.Text + " and CodIdVentaConvenio =" + tbCodIdVentaConvenio.Text + " and FolioBono = " + tbFolioBono.Text + " and CorrPrestacion =" + tbCorrPrestacion.Text + ";";
             switch (prestaciones.SelectedIndex)
             {
                 case 0:
-                    this.resultado.Text = "update trprestacionventaconvenio set  CodIdPrestacionCertificador = 13893, CodPrestacionCertificador = '0306691',CodIdPrestacionHomologo = 47073,CodItemFinanciador = 0 where NumActoVenta = " + tbNumActoVenta.Text
-                + " and CodIdVentaConvenio =" + tbCodIdVentaConvenio.Text + " and CorrPrestacion =" + tbCorrPrestacion.Text + ";" + "\n" + "\n" +
-                "update trbonoprestaciones set  CodIdPrestacionCertificador = 13893 where NumActoVenta  =" + tbNumActoVenta.Text
-                + " and CodIdVentaConvenio =" + tbCodIdVentaConvenio.Text + " and FolioBono = " + tbFolioBono.Text + " and CorrPrestacion =" + tbCorrPrestacion.Text + ";";
+                    this.resultado.Text = "update trprestacionventaconvenio set  CodIdPrestacionCertificador = 13893, CodPrestacionCertificador = '0306691',CodIdPrestacionHomologo = 47073,CodItemFinanciador = 0 " + vtaconvenio +
+                "update trbonoprestaciones set  CodIdPrestacionCertificador = 13893" + bonoprestacion ;
                     break;
 
                 case 1:
-                    this.resultado.Text = "update trprestacionventaconvenio set  CodIdPrestacionCertificador = 13899, CodPrestacionCertificador = '0306692',CodIdPrestacionHomologo = 47088,CodItemFinanciador = 0 where NumActoVenta = " + tbNumActoVenta.Text
-                + " and CodIdVentaConvenio =" + tbCodIdVentaConvenio.Text + " and CorrPrestacion =" + tbCorrPrestacion.Text + ";" + "\n" + "\n" +
-                "update trbonoprestaciones set  CodIdPrestacionCertificador = 13899  where NumActoVenta = " + tbNumActoVenta.Text
-                + " and CodIdVentaConvenio =" + tbCodIdVentaConvenio.Text + " and FolioBono = " + tbFolioBono.Text + " and CorrPrestacion =" + tbCorrPrestacion.Text + ";";
+                    this.resultado.Text = "update trprestacionventaconvenio set  CodIdPrestacionCertificador = 13899, CodPrestacionCertificador = '0306692',CodIdPrestacionHomologo = 47088,CodItemFinanciador = 0" +vtaconvenio +
+                "update trbonoprestaciones set  CodIdPrestacionCertificador = 13899"+ bonoprestacion;
                     break;
 
                 case 2:
-                    this.resultado.Text = "update trprestacionventaconvenio set  CodIdPrestacionCertificador = 13956, CodPrestacionCertificador = '0308646',CodIdPrestacionHomologo = 47124,CodItemFinanciador = 0 where NumActoVenta = " + tbNumActoVenta.Text
-                + " and CodIdVentaConvenio =" + tbCodIdVentaConvenio.Text + " and CorrPrestacion =" + tbCorrPrestacion.Text + ";" + "\n" + "\n" +
-                "update trbonoprestaciones set  CodIdPrestacionCertificador = 13893 where NumActoVenta  =" + tbNumActoVenta.Text
-                + " and CodIdVentaConvenio =" + tbCodIdVentaConvenio.Text + " and FolioBono = " + tbFolioBono.Text + " and CorrPrestacion =" + tbCorrPrestacion.Text + ";";
+                    this.resultado.Text = "update trprestacionventaconvenio set  CodIdPrestacionCertificador = 13956, CodPrestacionCertificador = '0308646',CodIdPrestacionHomologo = 47124,CodItemFinanciador = 0" + vtaconvenio +
+                "update trbonoprestaciones set  CodIdPrestacionCertificador = 13956" + bonoprestacion;
+                    break;
+
+                case 3:
+                    this.resultado.Text = "update trprestacionventaconvenio set  CodIdPrestacionCertificador = 16720, CodPrestacionCertificador = '0305691',CodIdPrestacionHomologo = 59224,CodItemFinanciador = 0" + vtaconvenio +
+                "update trbonoprestaciones set  CodIdPrestacionCertificador = 16720" + bonoprestacion;
+                    break;
+
+                case 4:
+                    this.resultado.Text = "update trprestacionventaconvenio set  CodIdPrestacionCertificador = 16726, CodPrestacionCertificador = '0305692',CodIdPrestacionHomologo = 59227,CodItemFinanciador = 0" + vtaconvenio +
+                "update trbonoprestaciones set  CodIdPrestacionCertificador = 16726" + bonoprestacion;
                     break;
 
                 default:
@@ -48,27 +54,6 @@ namespace query_maker
                     break;
             }
 
-            //if (rb2.Checked)
-            //{ 
-            //    this.resultado.Text = "update trprestacionventaconvenio set  CodIdPrestacionCertificador = 13899, CodPrestacionCertificador = '0306692',CodIdPrestacionHomologo = 47088,CodItemFinanciador = 0 where NumActoVenta = " + tbNumActoVenta.Text
-            //    + " and CodIdVentaConvenio =" + tbCodIdVentaConvenio.Text + " and CorrPrestacion =" + tbCorrPrestacion.Text + ";" +"\n"+"\n" +
-            //    "update trbonoprestaciones set  CodIdPrestacionCertificador = 13899  where NumActoVenta = " + tbNumActoVenta.Text
-            //    + " and CodIdVentaConvenio =" + tbCodIdVentaConvenio.Text + " and FolioBono = " + tbFolioBono.Text + " and CorrPrestacion =" + tbCorrPrestacion.Text + ";";
-            //}
-            //else if (rb1.Checked)
-            //{
-            //    this.resultado.Text = "update trprestacionventaconvenio set  CodIdPrestacionCertificador = 13893, CodPrestacionCertificador = '0306691',CodIdPrestacionHomologo = 47073,CodItemFinanciador = 0 where NumActoVenta = " + tbNumActoVenta.Text
-            //    + " and CodIdVentaConvenio =" + tbCodIdVentaConvenio.Text + " and CorrPrestacion =" + tbCorrPrestacion.Text + ";" + "\n" + "\n" +
-            //    "update trbonoprestaciones set  CodIdPrestacionCertificador = 13893 where NumActoVenta  =" + tbNumActoVenta.Text
-            //    + " and CodIdVentaConvenio =" + tbCodIdVentaConvenio.Text + " and FolioBono = " + tbFolioBono.Text + " and CorrPrestacion =" + tbCorrPrestacion.Text + ";";
-            //}
-            //else if (rb3.Checked)
-            //{
-            //    this.resultado.Text = "update trprestacionventaconvenio set  CodIdPrestacionCertificador = 13956, CodPrestacionCertificador = '0308646',CodIdPrestacionHomologo = 47124,CodItemFinanciador = 0 where NumActoVenta = " + tbNumActoVenta.Text
-            //    + " and CodIdVentaConvenio =" + tbCodIdVentaConvenio.Text + " and CorrPrestacion =" + tbCorrPrestacion.Text + ";" + "\n" + "\n" +
-            //    "update trbonoprestaciones set  CodIdPrestacionCertificador = 13893 where NumActoVenta  =" + tbNumActoVenta.Text
-            //    + " and CodIdVentaConvenio =" + tbCodIdVentaConvenio.Text + " and FolioBono = " + tbFolioBono.Text + " and CorrPrestacion =" + tbCorrPrestacion.Text + ";";
-            //}
         }
 
         private void btGenerar_Click(object sender, EventArgs e)
@@ -139,6 +124,14 @@ namespace query_maker
             "UPDATE cfconveniopago SET NombredelConvenio = '" + tbNombre.Text + "' WHERE CodIdConvenioPago = " + tbCodIdConvenioVenta.Text + ";";
         }
 
+        private void imagen()
+        {
+            this.rbimagen.Text = "update cme.cfncmedoc set ctamedid =" + tbImg2.Text+ " where ctamedid ="+ tbImg1.Text +";";
+        }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            imagen();
+        }
     }
 }

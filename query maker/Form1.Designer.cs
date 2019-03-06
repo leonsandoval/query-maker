@@ -41,6 +41,7 @@
             this.btGenerar = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.label14 = new System.Windows.Forms.Label();
             this.prestaciones = new System.Windows.Forms.ComboBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.btgenerar1 = new System.Windows.Forms.Button();
@@ -76,13 +77,20 @@
             this.tbCodIdConvenioVenta = new System.Windows.Forms.TextBox();
             this.tbNombre = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.label15 = new System.Windows.Forms.Label();
+            this.tbImg1 = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.tbImg2 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.rbimagen = new System.Windows.Forms.RichTextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.tabPage4.SuspendLayout();
             this.tabPage5.SuspendLayout();
+            this.tabPage6.SuspendLayout();
             this.SuspendLayout();
             // 
             // tbNumActoVenta
@@ -175,6 +183,7 @@
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Controls.Add(this.tabPage5);
+            this.tabControl1.Controls.Add(this.tabPage6);
             this.tabControl1.Location = new System.Drawing.Point(-1, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.Padding = new System.Drawing.Point(3, 3);
@@ -205,13 +214,24 @@
             this.tabPage1.UseVisualStyleBackColor = true;
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(40, 21);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(112, 13);
+            this.label14.TabIndex = 14;
+            this.label14.Text = "PrestacionFinanciador";
+            // 
             // prestaciones
             // 
             this.prestaciones.FormattingEnabled = true;
             this.prestaciones.Items.AddRange(new object[] {
             "306091",
             "306092",
-            "308046"});
+            "308046",
+            "305091",
+            "305092"});
             this.prestaciones.Location = new System.Drawing.Point(183, 21);
             this.prestaciones.Name = "prestaciones";
             this.prestaciones.Size = new System.Drawing.Size(121, 21);
@@ -568,14 +588,70 @@
             this.label12.TabIndex = 0;
             this.label12.Text = "Nuevo Nombre Convenio";
             // 
-            // label14
+            // tabPage6
             // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(40, 21);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(112, 13);
-            this.label14.TabIndex = 14;
-            this.label14.Text = "PrestacionFinanciador";
+            this.tabPage6.Controls.Add(this.rbimagen);
+            this.tabPage6.Controls.Add(this.button1);
+            this.tabPage6.Controls.Add(this.tbImg2);
+            this.tabPage6.Controls.Add(this.label16);
+            this.tabPage6.Controls.Add(this.tbImg1);
+            this.tabPage6.Controls.Add(this.label15);
+            this.tabPage6.Location = new System.Drawing.Point(4, 22);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Size = new System.Drawing.Size(620, 349);
+            this.tabPage6.TabIndex = 5;
+            this.tabPage6.Text = "Imagen CME";
+            this.tabPage6.UseVisualStyleBackColor = true;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(28, 44);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(88, 13);
+            this.label15.TabIndex = 0;
+            this.label15.Text = "ctamedid envio 1";
+            // 
+            // tbImg1
+            // 
+            this.tbImg1.Location = new System.Drawing.Point(31, 60);
+            this.tbImg1.Name = "tbImg1";
+            this.tbImg1.Size = new System.Drawing.Size(100, 20);
+            this.tbImg1.TabIndex = 1;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(236, 45);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(109, 13);
+            this.label16.TabIndex = 2;
+            this.label16.Text = "ctamedid ultimo envio";
+            // 
+            // tbImg2
+            // 
+            this.tbImg2.Location = new System.Drawing.Point(239, 61);
+            this.tbImg2.Name = "tbImg2";
+            this.tbImg2.Size = new System.Drawing.Size(100, 20);
+            this.tbImg2.TabIndex = 3;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(426, 57);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Generar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // rbimagen
+            // 
+            this.rbimagen.Location = new System.Drawing.Point(26, 112);
+            this.rbimagen.Name = "rbimagen";
+            this.rbimagen.Size = new System.Drawing.Size(474, 105);
+            this.rbimagen.TabIndex = 5;
+            this.rbimagen.Text = "";
             // 
             // Form1
             // 
@@ -597,6 +673,8 @@
             this.tabPage4.PerformLayout();
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
+            this.tabPage6.ResumeLayout(false);
+            this.tabPage6.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -651,6 +729,13 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.ComboBox prestaciones;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TabPage tabPage6;
+        private System.Windows.Forms.RichTextBox rbimagen;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox tbImg2;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.TextBox tbImg1;
+        private System.Windows.Forms.Label label15;
     }
 }
 
